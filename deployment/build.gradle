@@ -5,10 +5,11 @@
  */
 
 dependencies {
-    bundle project(':AWS-SK')
-    bundle project(':ConsulUpdate')
-    bundle project(':Enterprise')
+//    bundle project(':AWS-SK')
+//    bundle project(':ConsulUpdate')
+//    bundle project(':Enterprise')
+    bundle project(':example')
 
-    customassertion group: 'AWSAssertion', name: 'AWSAssertion', ext: 'jar', version: '1.0.05'
-    customassertion group: 'Aws4SignerAssertion', name: 'Aws4SignerAssertion', ext: 'jar', version: '1.0.05'
+//    customassertion group: 'AWSAssertion', name: 'AWSAssertion', ext: 'jar', version: '1.0.05'
+//    customassertion group: 'Aws4SignerAssertion', name: 'Aws4SignerAssertion', ext: 'jar', version: '1.0.05'
 }
