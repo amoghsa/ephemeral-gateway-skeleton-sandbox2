@@ -27,7 +27,7 @@
         <L7p:HttpRoutingAssertion>
             <L7p:FailOnErrorStatus booleanValue="false"/>
             <L7p:HttpMethod httpMethod="PUT"/>
-            <L7p:ProtectedServiceUrl stringValue="${gateway.consul.hostaddress}/catalog/deregister"/>
+            <L7p:ProtectedServiceUrl stringValue="http://${gateway.consul.url}:${gateway.consul.port}/v1/catalog/deregister"/>
             <L7p:ProxyPassword stringValueNull="null"/>
             <L7p:ProxyUsername stringValueNull="null"/>
             <L7p:RequestHeaderRules httpPassthroughRuleSet="included">

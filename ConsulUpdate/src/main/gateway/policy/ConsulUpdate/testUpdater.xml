@@ -17,7 +17,7 @@
                     </L7p:entry>
                 </L7p:Properties>
             </L7p:AssertionComment>
-            <L7p:ProtectedServiceUrl stringValue="${gateway.consul.hostaddress}/coordinate/nodes"/>
+            <L7p:ProtectedServiceUrl stringValue="http://${gateway.consul.url}:${gateway.consul.port}/v1/coordinate/nodes"/>
             <L7p:ProxyPassword stringValueNull="null"/>
             <L7p:ProxyUsername stringValueNull="null"/>
             <L7p:RequestHeaderRules httpPassthroughRuleSet="included">
@@ -68,7 +68,7 @@
                         </L7p:entry>
                     </L7p:Properties>
                 </L7p:AssertionComment>
-                <L7p:ProtectedServiceUrl stringValue="${gateway.consul.hostaddress}/health/node/${node.current}"/>
+                <L7p:ProtectedServiceUrl stringValue="http://${gateway.consul.url}:${gateway.consul.port}/v1/health/node/${node.current}"/>
                 <L7p:ProxyPassword stringValueNull="null"/>
                 <L7p:ProxyUsername stringValueNull="null"/>
                 <L7p:RequestHeaderRules httpPassthroughRuleSet="included">
@@ -139,7 +139,7 @@
                                     </L7p:entry>
                                 </L7p:Properties>
                             </L7p:AssertionComment>
-                            <L7p:ProtectedServiceUrl stringValue="${gateway.consul.hostaddress}/health/service/${serviceName.current}"/>
+                            <L7p:ProtectedServiceUrl stringValue="http://${gateway.consul.url}:${gateway.consul.port}/v1/health/service/${serviceName.current}"/>
                             <L7p:ProxyPassword stringValueNull="null"/>
                             <L7p:ProxyUsername stringValueNull="null"/>
                             <L7p:RequestHeaderRules httpPassthroughRuleSet="included">

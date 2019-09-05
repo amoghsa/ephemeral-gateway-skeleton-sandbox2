@@ -61,7 +61,7 @@
                     </L7p:Predicates>
                 </L7p:ComparisonAssertion>
                 <L7p:HttpRoutingAssertion>
-                    <L7p:ProtectedServiceUrl stringValue="${gateway.consul.hostaddress}/catalog/service${param.uri}"/>
+                    <L7p:ProtectedServiceUrl stringValue="http://${gateway.consul.url}:${gateway.consul.port}/v1/catalog/service${param.uri}"/>
                     <L7p:ProxyPassword stringValueNull="null"/>
                     <L7p:ProxyUsername stringValueNull="null"/>
                     <L7p:RequestHeaderRules httpPassthroughRuleSet="included">
@@ -93,7 +93,7 @@
             <wsp:All wsp:Usage="Required">
                 <L7p:HttpRoutingAssertion>
                     <L7p:FailOnErrorStatus booleanValue="false"/>
-                    <L7p:ProtectedServiceUrl stringValue="${gateway.consul.hostaddress}/catalog/services"/>
+                    <L7p:ProtectedServiceUrl stringValue="http://${gateway.consul.url}:${gateway.consul.port}/v1/catalog/services"/>
                     <L7p:ProxyPassword stringValueNull="null"/>
                     <L7p:ProxyUsername stringValueNull="null"/>
                     <L7p:RequestHeaderRules httpPassthroughRuleSet="included">

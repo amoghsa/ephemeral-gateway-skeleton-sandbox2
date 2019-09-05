@@ -2,7 +2,7 @@
     <wsp:All wsp:Usage="Required">
         <L7p:HttpRoutingAssertion>
             <L7p:FailOnErrorStatus booleanValue="false"/>
-            <L7p:ProtectedServiceUrl stringValue="http://${gateway.consul.hostaddress}/agent/services"/>
+            <L7p:ProtectedServiceUrl stringValue="http://${gateway.consul.url}:${gateway.consul.port}/v1/agent/services"/>
             <L7p:ProxyPassword stringValueNull="null"/>
             <L7p:ProxyUsername stringValueNull="null"/>
             <L7p:RequestHeaderRules httpPassthroughRuleSet="included">
