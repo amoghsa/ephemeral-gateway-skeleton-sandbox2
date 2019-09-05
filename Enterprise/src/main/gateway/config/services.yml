@@ -8,16 +8,6 @@ Enterprise/Proxies/ORDER:
   - "PUT"
   properties: {}
   wssProcessingEnabled: false
-Enterprise/Consul/consul-CacheUpdate:
-  url: "/cache/update"
-  policy: "Enterprise/Consul/consul-CacheUpdate"
-  httpMethods:
-  - "DELETE"
-  - "POST"
-  - "GET"
-  - "PUT"
-  properties: {}
-  wssProcessingEnabled: false
 Enterprise/Consul/Consul-ServiceRoute:
   url: "/microsvc*"
   policy: "Enterprise/Consul/Consul-ServiceRoute"

@@ -6,7 +6,6 @@
 
 dependencies {
     bundle project(':AWS-SK')
-//    bundle project(':ConsulUpdate')
     bundle project(':Enterprise')
     bundle project(':gmu')
 
