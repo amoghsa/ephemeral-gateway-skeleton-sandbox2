@@ -8,4 +8,4 @@ rootProject.name = 'AmoghGateway'
 
 //include 'deployment', 'example', 'AWS-SK', 'ConsulUpdate'
 //include 'deployment', 'AWS-SK', 'ConsulUpdate', 'Enterprise'
-include 'deployment', 'gmu'
+include 'deployment', 'gmu', 'AWS-SK', 'Enterprise'

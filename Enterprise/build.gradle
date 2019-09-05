@@ -6,7 +6,9 @@
 
 GatewayExportConfig {
     folderPath = '/Enterprise'
-    exportEntities = [
-            privateKeys: [ "consulgw.security.broadcom.com" ]
-    ]
+//    exportEntities = [
+//            privateKeys: [ "ephemeral.aws.com" ],
+//            certificates: ["ephemeral.aws.com"],
+//            certificates: ["localhost"]
+//    ]
 }

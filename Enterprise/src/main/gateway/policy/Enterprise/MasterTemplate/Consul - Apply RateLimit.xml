@@ -70,6 +70,18 @@
                 </L7p:CustomizeErrorResponse>
                 <L7p:RaiseError/>
             </wsp:All>
+            <L7p:assertionComment>
+                <L7p:Properties mapValue="included">
+                    <L7p:entry>
+                        <L7p:key stringValue="LEFT.COMMENT"/>
+                        <L7p:value stringValue="GET KEY/VALUE"/>
+                    </L7p:entry>
+                    <L7p:entry>
+                        <L7p:key stringValue="RIGHT.COMMENT"/>
+                        <L7p:value stringValue="//Retrieve Value for the given key from Consul"/>
+                    </L7p:entry>
+                </L7p:Properties>
+            </L7p:assertionComment>
         </wsp:OneOrMore>
         <wsp:All wsp:Usage="Required">
             <L7p:EvaluateJsonPathExpression>
@@ -108,6 +120,18 @@
                 <L7p:Target target="OTHER"/>
                 <L7p:VariablePrefix stringValue="spreadLimit"/>
             </L7p:EvaluateJsonPathExpressionV2>
+            <L7p:assertionComment>
+                <L7p:Properties mapValue="included">
+                    <L7p:entry>
+                        <L7p:key stringValue="LEFT.COMMENT"/>
+                        <L7p:value stringValue="PREPARE RESPONSE"/>
+                    </L7p:entry>
+                    <L7p:entry>
+                        <L7p:key stringValue="RIGHT.COMMENT"/>
+                        <L7p:value stringValue="// Retrieve data from consul and prepare the response"/>
+                    </L7p:entry>
+                </L7p:Properties>
+            </L7p:assertionComment>
         </wsp:All>
         <wsp:All wsp:Usage="Required">
             <L7p:SetVariable>
